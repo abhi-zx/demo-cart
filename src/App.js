@@ -64,7 +64,7 @@ const App = () => {
 
   return (
     <Router>
-      <Header cartItems={cart} className="header" />
+      <Header cartItems={cart} />
       <Routes>
         <Route path="/" element={
           <div>
