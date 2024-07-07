@@ -1,0 +1,14 @@
+.imagecontainer{
+    height: 100px;
+    width: 100px;
+}
+
+.imagecontainer >img{
+    height: 100%;
+    width: 100%;
+}
+.prodcontainer{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
