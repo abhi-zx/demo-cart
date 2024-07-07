@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import ProductList from './components/ProductList';
 import CartPage from './components/CartPage';
 import Header from './components/Header';
-
+import "./App.css"
 const App = () => {
   const getProductData = async () => {
     const data = await fetch(`https://dummyjson.com/products?limit=100`)
@@ -64,7 +64,7 @@ const App = () => {
 
   return (
     <Router>
-      <Header cartItems={cart} />
+      <Header cartItems={cart} className="header" />
       <Routes>
         <Route path="/" element={
           <div>
